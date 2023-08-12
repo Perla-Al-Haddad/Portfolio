@@ -111,6 +111,21 @@ hr {
     border-color: #38b6ff;
 }
 
+.featured-projects-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+svg.feather {
+    fill: none;
+}
+
 @media (min-width: 576px) {
 
     .project-description-container {

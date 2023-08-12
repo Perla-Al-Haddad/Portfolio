@@ -88,7 +88,7 @@
             fill="rgb(76, 79, 133, 0.1)" />
         </svg>
 
-        <h6 class="fw-bolder mb-3 text-dark">About</h6>
+        <h6 class="fw-bolder mb-4 text-dark">About</h6>
         <!--<hr>-->
 
         <p class="text-gray">
@@ -112,7 +112,7 @@
 
   <section class="container col-md-12 pt-4" id="experience">
 
-    <h6 class="fw-bolder mb-3 text-dark">Experience</h6>
+    <h6 class="fw-bolder mb-4 text-dark">Experience</h6>
     <!--<hr>-->
     <div class="mb-5">
       <h4><span class="text-blue">Full Stack Web Developer</span> <a href="https://www.unescwa.org/"
@@ -181,9 +181,9 @@
 
   <section class="container col-md-12 pt-4" id="projects">
 
-    <h6 class="fw-bolder mb-3 text-dark">Projects</h6>
+    <h6 class="fw-bolder mb-4 text-dark">Projects</h6>
 
-    <div class="pb-5" style="display: grid; grid-template-columns: repeat(1, 1fr); align-items: center;">
+    <div class="pb-5 featured-projects-container">
       <div class="project-carousel-container project-first-container mb-3">
         <div id="datacatalogcarousel" class="carousel slide" data-bs-ride="carousel">
           <a target="_blank" href="https://datacatalog.unescwa.org/">
@@ -237,7 +237,7 @@
       </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(1, 1fr); align-items: center;">
+    <div class="pb-5 featured-projects-container">
       <div class="project-description-container project-first-container">
         <div class="">
           <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
@@ -266,7 +266,7 @@
 
       <div class="project-carousel-container project-second-container">
         <div id="dataportalcarousel" class="carousel slide" data-bs-ride="carousel">
-          <a target="_blank" href="https://datacatalog.unescwa.org/">
+          <a target="_blank" href="https://dataportal.unescwa.org/">
             <div class="carousel-inner" style="border-radius: 5px;">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="assets/images/dp_01.PNG" class="d-block w-100" alt="...">
@@ -295,10 +295,262 @@
       </div>
     </div>
 
+    <div class="pb-5 featured-projects-container">
+      <div class="project-carousel-container project-first-container mb-3">
+        <div id="geospatialportalcarousel" class="carousel slide" data-bs-ride="carousel">
+          <a target="_blank" href="https://data.as-rcp.org/GIS/Landing">
+            <div class="carousel-inner" style="border-radius: 5px;">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/images/geo_01.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/geo_02.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/geo_03.PNG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </a>
+          <button class="carousel-control-prev" type="button" data-bs-target="#geospatialportalcarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#geospatialportalcarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="project-description-container project-second-container">
+        <div class="text-end">
+          <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
+          <h4 class="text-blue mb-4"><a target="_blank" href="https://data.as-rcp.org/GIS/Landing"><i
+                class="fa-sm text-dark fa-solid fa-link"></i></a> Arab Region Geospatial Portal</h4>
+        </div>
+        <div class="text-end bg-dark p-4 rounded description-container">
+          <p class="m-0">
+            Arab Region Geospatial Portal is a platform that enables users to visualize geospatial maps from an
+            Esri Enterprise Portal. This project harnessed the ArcGIS JavaScript library and Esri Python API to
+            effortlessly display and retrieve geospatial maps, offering an accessible way for users to engage with
+            spatial data and derive meaningful insights
+          </p>
+        </div>
+        <div class="d-flex flex-wrap gap-2 pt-3 justify-content-end">
+          <span class="badge custom-pill link-hover-light">
+            <a target="_blank" href="https://developers.arcgis.com/javascript/latest/" class="text-blue">ArcGIS
+              JavaScript API</a>
+          </span>
+          <span class="badge custom-pill link-hover-light">
+            <a target="_blank" href="https://developers.arcgis.com/python/" class="text-blue">ArcGIS
+              Python API</a>
+          </span>
+          <span class="badge custom-pill">.Net</span>
+          <span class="badge custom-pill">Azure functions</span>
+          <span class="badge custom-pill">Azure blob storage</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <h5 class="text-light text-center my-5">Other noteworthy projects</h5>
+
+    <div class="row justify-content-center pb-5">
+      <div class="col-12 col-md-10">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 bg-dark text-light">
+              <div class="card-body px-4 py-4">
+                <p class="mb-5 mt-3 text-blue text-center">
+                  <i class="fa-2xl fa-solid fa-bug "></i>
+                </p>
+                <h5 class="card-title fw-bold mb-3 text-light">Future of Work</h5>
+                <p class="card-text text-gray">
+                  Developed and maintained web scraping solutions using Python's Selenium and Beautiful Soup frameworks.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge custom-pill">Python</span>
+                  <span class="badge custom-pill">Selenium</span>
+                  <span class="badge custom-pill">Beautiful Soup</span>
+                  <span class="badge custom-pill">MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark text-light">
+              <div class="card-body px-4 py-4">
+                <p class="mb-5 mt-3 text-blue text-center">
+                  <i class="fa-2xl fa-solid fa-globe"></i>
+                </p>
+                <h5 class="card-title fw-bold mb-3 text-light">Arab Ground Water</h5>
+                <p class="card-text text-gray">
+                  Compact endeavor akin to the Geospatial Portal. Aims to provide valuable insights into geospatial data
+                  for informed decision-making.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge custom-pill">Arcgis Javascript API</span>
+                  <span class="badge custom-pill">Arcgis Python API</span>
+                  <span class="badge custom-pill">Azure functions</span>
+                  <span class="badge custom-pill">Azure blob storage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark text-light">
+              <div class="card-body px-4 py-4">
+                <p class="mb-5 mt-3 text-blue text-center">
+                  <i class="fa-2xl fa-solid fa-fish"></i>
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold mb-3 text-light">VS Code Aquarium Extension</h5>
+                  <a class="text-blue" href="https://github.com/Perla-Al-Haddad/vs-code-aquarium"
+                    aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-github">
+                      <title>GitHub</title>
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+
+                <p class="card-text text-gray">
+                  VSCode extension that adds a small digital aquarium to the Explorer sidebar. Enjoy the beauty of the
+                  sea right in your code editor!
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge custom-pill">Typescript</span>
+                  <span class="badge custom-pill">HTML</span>
+                  <span class="badge custom-pill">CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark text-light">
+              <div class="card-body px-4 py-4">
+                <p class="mb-5 mt-3 text-blue text-center">
+                  <i class="fa-2xl fa-solid fa-meteor"></i>
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold mb-3 text-light">Asteroids FXML Remake</h5>
+                  <a class="text-blue" href="https://github.com/Perla-Al-Haddad/Asteroids-FXML-Game"
+                    aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-github">
+                      <title>GitHub</title>
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+
+                <p class="card-text text-gray">
+                  Remake of the retro game "Asteroids" built using JavaFX.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge custom-pill">Java</span>
+                  <span class="badge custom-pill">JavaFX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-dark text-light">
+              <div class="card-body px-4 py-4">
+                <p class="mb-5 mt-3 text-blue text-center">
+                  <i class="fa-2xl fa-solid fa-rocket"></i>
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold mb-3 text-light">P5 Pixel Invasion</h5>
+                  <div class="d-flex gap-2 align-items-baseline">
+
+                    <a class="text-blue" href="https://perla-al-haddad.github.io/P5PixelInvasion/"
+                      aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a class="text-blue" href="https://github.com/Perla-Al-Haddad/P5PixelInvasion"
+                      aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="card-text text-gray">
+                  Remake of the retro game "Invaders" built using the P5.js library.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge custom-pill">HTML</span>
+                  <span class="badge custom-pill">CSS</span>
+                  <span class="badge custom-pill">Javascript</span>
+                  <span class="badge custom-pill">P5.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-dark text-light">
+              <div class="card-body px-4 py-4">
+                <p class="mb-5 mt-3 text-blue text-center">
+                  <i class="fa-2xl fa-solid fa-house"></i>
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold mb-3 text-light">RentLo</h5>
+                  <div class="d-flex gap-2 align-items-baseline">
+
+                    <a class="text-blue" href="https://github.com/Perla-Al-Haddad/I3302-RentLo-finals-project"
+                      aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="card-text text-gray">
+                  Airbnb esc renting website, where users can easily rent properties.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge custom-pill">.NET</span>
+                  <span class="badge custom-pill">MSSQL</span>
+                  <span class="badge custom-pill">HTML</span>
+                  <span class="badge custom-pill">CSS</span>
+                  <span class="badge custom-pill">Bootstrap</span>
+                  <span class="badge custom-pill">Javascript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section class="container col-md-12 pt-5" style="height: 500px;" id="contact">
-    <h6 class="fw-bolder mb-5 text-dark">Contact</h6>
     <div class="row justify-content-center">
       <div class="col-12 col-md-4 text-center">
         <h1 class="fw-bolder text-blue mb-4">Get In Touch</h1>
