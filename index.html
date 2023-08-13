@@ -12,56 +12,78 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="shortcut icon" href="assets/images/pal(1).png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/pal.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg mt-4">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/images/pal(1).png" width="65" alt=""></a>
-      <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <i class="text-dark fa-solid fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav navbar-dark ms-auto mb-2 mb-lg-0 gap-4">
-          <li class="nav-item">
-            <a class="nav-link text-gray" aria-current="page" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-gray" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-gray" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-gray" href="#">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-gray" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg mt-4">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/pal.png" width="65" alt=""></a>
+        <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="text-dark fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-dark ms-auto mb-2 mb-lg-0 gap-4 align-items-center justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-gray" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-gray" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-gray" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-gray" href="#">Resume</a>
+            </li>
+            <li class="nav-item me-md-4">
+              <a class="nav-link text-gray" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item position-relative">
+              <svg id="moon" class="position-absolute opacity-0 theme-toggle" onclick="themeToggle()"
+                xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z"
+                  stroke="#38b6ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg id="sun" class="theme-toggle" onclick="themeToggle()" xmlns="http://www.w3.org/2000/svg" width="40px"
+                height="40px" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="3.5" stroke="#38b6ff" />
+                <path d="M12 5V3" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M12 21V19" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M16.9498 7.04996L18.364 5.63574" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M5.63608 18.3644L7.05029 16.9502" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M19 12L21 12" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M3 12L5 12" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M16.9498 16.95L18.364 18.3643" stroke="#38b6ff" stroke-linecap="round" />
+                <path d="M5.63608 5.63559L7.05029 7.0498" stroke="#38b6ff" stroke-linecap="round" />
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <div class="container pt-5" id="about">
+  <section class="container pt-5" id="about">
     <div class="row">
       <div class="col-12 col-md-6">
-        <div style="max-width: fit-content;">
+        <div class="name-card-container">
           <h5 class="fs-6 text-blue">Hi, my name is</h5>
           <h1 class="mb-2 display-3 fw-bold lh-1">Perla Al Haddad.</h1>
-          <h4 class="fw-bold text-blue">Full Stack Web Developer</h4>
-          <div class="row">
-            <div class="col mb-3">
+          <h4 class="fw-bold text-blue mb-3">Full Stack Web Developer</h4>
+          <div class="row mb-6">
+            <div class="col">
               <a class="text-dark text-decoration-none"
                 href="mailto:perlaalhaddad@gmail.com">perlaalhaddad@gmail.com</a>
             </div>
-            <div class="col mb-4">
-              <ul class="list-group list-group-horizontal list-unstyled gap-4 justify-content-end align-items-center">
+            <div class="col">
+              <ul class="list-group list-group-horizontal list-unstyled gap-3 justify-content-end align-items-center">
                 <li class="accounts-links"><a class="text-light" target="_blank"
                     href="https://github.com/Perla-Al-Haddad"><i class="fa-2xl fa-brands fa-github"></i></a></li>
                 <li class="accounts-links"><a class="text-light" target="_blank"
@@ -73,22 +95,20 @@
         </div>
 
       </div>
-      <div class="col-12 col-md-6 position-relative">
-        <svg class="position-absolute" style="transform: rotate(15deg); top: 45px; right: 0px;"
+      <div class="mb-6 col-12 col-md-6 position-relative">
+        <svg class="position-absolute hexagon" style="transform: rotate(15deg); top: 45px; right: 0px; opacity: 0.2;"
           xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 24 24" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M12 19.1603L18.2009 15.5802L18.2009 8.41988L12 4.83975L5.79898 8.41988L5.79898 15.5801L12 19.1603ZM4.29898 16.4462L12 20.8923L19.7009 16.4462L19.7009 7.55386L12 3.1077L4.29898 7.55386L4.29898 16.4462Z"
-            fill="rgb(76, 79, 133, 0.2)" />
+            d="M12 19.1603L18.2009 15.5802L18.2009 8.41988L12 4.83975L5.79898 8.41988L5.79898 15.5801L12 19.1603ZM4.29898 16.4462L12 20.8923L19.7009 16.4462L19.7009 7.55386L12 3.1077L4.29898 7.55386L4.29898 16.4462Z" />
         </svg>
 
-        <svg class="position-absolute" style="transform: rotate(15deg); top: 100px; right: 0px;"
+        <svg class="position-absolute hexagon" style="transform: rotate(15deg); top: 100px; right: 0px; opacity: 0.1;"
           xmlns="http://www.w3.org/2000/svg" width="150px" height="150px" viewBox="0 0 24 24" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M12 19.1603L18.2009 15.5802L18.2009 8.41988L12 4.83975L5.79898 8.41988L5.79898 15.5801L12 19.1603ZM4.29898 16.4462L12 20.8923L19.7009 16.4462L19.7009 7.55386L12 3.1077L4.29898 7.55386L4.29898 16.4462Z"
-            fill="rgb(76, 79, 133, 0.1)" />
+            d="M12 19.1603L18.2009 15.5802L18.2009 8.41988L12 4.83975L5.79898 8.41988L5.79898 15.5801L12 19.1603ZM4.29898 16.4462L12 20.8923L19.7009 16.4462L19.7009 7.55386L12 3.1077L4.29898 7.55386L4.29898 16.4462Z" />
         </svg>
 
-        <h6 class="fw-bolder mb-4 text-dark">About</h6>
+        <h5 class="fw-bolder mb-4 text-dark">About</h5>
         <!--<hr>-->
 
         <p class="text-gray">
@@ -108,18 +128,18 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <section class="container col-md-12 pt-4" id="experience">
+  <section class="container col-md-12 pt-4 mb-6" id="experience">
 
-    <h6 class="fw-bolder mb-4 text-dark">Experience</h6>
+    <h5 class="fw-bolder mb-4 text-dark">Experience</h5>
     <!--<hr>-->
     <div class="mb-5">
       <h4><span class="text-blue">Full Stack Web Developer</span> <a href="https://www.unescwa.org/"
           class="text-gray fs-6 text-decoration-none">@ UN-ESCWA</a></h4>
       <div class="row flex-row-reverse">
         <div class="col-12 col-md-3">
-          <p class="text-blue fs-7 text-end fw-bold" style="font-family: monospace;">
+          <p class="text-blue fs-7 fw-bold experience-date">
             Nov 2021 — Present
           </p>
         </div>
@@ -157,7 +177,7 @@
       </h4>
       <div class="row flex-row-reverse">
         <div class="col-12 col-md-3">
-          <p class="text-blue fs-7 text-end fw-bold" style="font-family: monospace;">
+          <p class="text-blue fs-7 fw-bold experience-date">
             Sep 2021 — Nov 2021
           </p>
         </div>
@@ -179,13 +199,13 @@
 
   </section>
 
-  <section class="container col-md-12 pt-4" id="projects">
+  <section class="container col-md-12 pt-4 mb-6" id="projects">
 
-    <h6 class="fw-bolder mb-4 text-dark">Projects</h6>
+    <h5 class="fw-bolder mb-4 text-dark">Projects</h5>
 
     <div class="pb-5 featured-projects-container">
-      <div class="project-carousel-container project-first-container mb-3">
-        <div id="datacatalogcarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="project-carousel-container project-first-container">
+        <div id="datacatalogcarousel" class="carousel slide mb-3" data-bs-ride="carousel">
           <a target="_blank" href="https://datacatalog.unescwa.org/">
             <div class="carousel-inner" style="border-radius: 5px;">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -211,19 +231,19 @@
           </button>
         </div>
       </div>
-      <div class="project-description-container project-second-container">
-        <div class="text-end">
-          <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
-          <h4 class="text-blue mb-4"><a target="_blank" href="https://datacatalog.unescwa.org/"><i
-                class="fa-sm text-dark fa-solid fa-link"></i></a> UN RCP Open Data Catalog</h4>
+      <div class="project-description-container description-right project-second-container">
+        <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
+        <h4 class="text-blue mb-4"><a target="_blank" href="https://datacatalog.unescwa.org/"><i
+              class="fa-sm text-dark fa-solid fa-link"></i></a> UN RCP Open Data Catalog</h4>
+        <div class="sm-carousel-container">
         </div>
-        <div class="text-end bg-dark p-4 rounded description-container">
+        <div class="bg-dark p-4 rounded description-container">
           <p class="m-0">
             The UN RCP Open Data Catalog is a platform that aggregates and displays diverse data from online sources. It
             offers users a comprehensive resource to access, visualize, and search curated datasets.
           </p>
         </div>
-        <div class="d-flex flex-wrap gap-2 pt-3 justify-content-end">
+        <div class="d-flex flex-wrap gap-2 pt-3 right-badge-justify">
           <span class="badge custom-pill link-hover-light"><a target="_blank" href="https://ckan.org/"
               class="text-blue">CKAN</a></span>
           <span class="badge custom-pill">Flask</span>
@@ -239,10 +259,10 @@
 
     <div class="pb-5 featured-projects-container">
       <div class="project-description-container project-first-container">
-        <div class="">
-          <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
-          <h4 class="text-blue mb-4">UN Arab Region Data and Policy Support Hub <a target="_blank"
-              href="https://dataportal.unescwa.org/"><i class="fa-sm text-dark fa-solid fa-link"></i></a></h4>
+        <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
+        <h4 class="text-blue mb-4">UN Arab Region Data and Policy Support Hub <a target="_blank"
+            href="https://dataportal.unescwa.org/"><i class="fa-sm text-dark fa-solid fa-link"></i></a></h4>
+        <div class="sm-carousel-container">
         </div>
         <div class=" bg-dark p-4 rounded description-container">
           <p class="m-0">
@@ -251,7 +271,7 @@
             inform evidence-based policies, and promote informed discussions on vital socio-economic matters.
           </p>
         </div>
-        <div class="d-flex flex-wrap gap-2 py-3">
+        <div class="d-flex flex-wrap gap-2 pt-3">
           <span class="badge custom-pill">.Net</span>
           <span class="badge custom-pill">MSSQl</span>
           <span class="badge custom-pill">Docker</span>
@@ -265,7 +285,7 @@
       </div>
 
       <div class="project-carousel-container project-second-container">
-        <div id="dataportalcarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="dataportalcarousel" class="carousel slide mb-3" data-bs-ride="carousel">
           <a target="_blank" href="https://dataportal.unescwa.org/">
             <div class="carousel-inner" style="border-radius: 5px;">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -296,8 +316,8 @@
     </div>
 
     <div class="pb-5 featured-projects-container">
-      <div class="project-carousel-container project-first-container mb-3">
-        <div id="geospatialportalcarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="project-carousel-container project-first-container">
+        <div id="geospatialportalcarousel" class="carousel slide mb-3" data-bs-ride="carousel">
           <a target="_blank" href="https://data.as-rcp.org/GIS/Landing">
             <div class="carousel-inner" style="border-radius: 5px;">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -323,13 +343,13 @@
           </button>
         </div>
       </div>
-      <div class="project-description-container project-second-container">
-        <div class="text-end">
-          <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
-          <h4 class="text-blue mb-4"><a target="_blank" href="https://data.as-rcp.org/GIS/Landing"><i
-                class="fa-sm text-dark fa-solid fa-link"></i></a> Arab Region Geospatial Portal</h4>
+      <div class="project-description-container description-right project-second-container">
+        <h6 class="fs-7 fw-bold text-dark" style="font-family: monospace;">Featured project</h6>
+        <h4 class="text-blue mb-4"><a target="_blank" href="https://data.as-rcp.org/GIS/Landing"><i
+              class="fa-sm text-dark fa-solid fa-link"></i></a> Arab Region Geospatial Portal</h4>
+        <div class="sm-carousel-container">
         </div>
-        <div class="text-end bg-dark p-4 rounded description-container">
+        <div class="bg-dark p-4 rounded description-container">
           <p class="m-0">
             Arab Region Geospatial Portal is a platform that enables users to visualize geospatial maps from an
             Esri Enterprise Portal. This project harnessed the ArcGIS JavaScript library and Esri Python API to
@@ -337,7 +357,7 @@
             spatial data and derive meaningful insights
           </p>
         </div>
-        <div class="d-flex flex-wrap gap-2 pt-3 justify-content-end">
+        <div class="d-flex flex-wrap gap-2 pt-3 right-badge-justify">
           <span class="badge custom-pill link-hover-light">
             <a target="_blank" href="https://developers.arcgis.com/javascript/latest/" class="text-blue">ArcGIS
               JavaScript API</a>
@@ -354,8 +374,7 @@
       </div>
     </div>
 
-
-    <h5 class="text-light text-center my-5">Other noteworthy projects</h5>
+    <h4 class="text-light text-center my-5">Other noteworthy projects</h4>
 
     <div class="row justify-content-center pb-5">
       <div class="col-12 col-md-10">
@@ -550,7 +569,7 @@
 
   </section>
 
-  <section class="container col-md-12 pt-5" style="height: 500px;" id="contact">
+  <section class="container col-md-12 pt-4" style="height: 500px;" id="contact">
     <div class="row justify-content-center">
       <div class="col-12 col-md-4 text-center">
         <h1 class="fw-bolder text-blue mb-4">Get In Touch</h1>
@@ -575,6 +594,33 @@
   </footer>
 
   <script src="assets/lib/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/lib/jquery/jquery-3.7.0.min.js"></script>
+
+  <script>
+    function themeToggle() {
+      $("#moon").toggleClass("opacity-0");
+      $("#sun").toggleClass("opacity-0");
+      $("body").toggleClass("light");
+    }
+
+    function resize() {
+      let featuredProjectsContainer = $(".featured-projects-container");
+
+      for (let i = 0; i < featuredProjectsContainer.length; i++) {
+        let element = featuredProjectsContainer[i];
+        if ($(window).width() < 992) {
+          $(element).find(".project-carousel-container").find(".carousel").appendTo($(element).find(".sm-carousel-container"));
+        } else {
+          $(element).find(".sm-carousel-container").find(".carousel").appendTo($(element).find(".project-carousel-container"));
+        }
+      }
+    }
+
+    $(document).ready(() => { resize(); });
+
+    $(window).on("resize", () => { resize(); });
+
+  </script>
 </body>
 
 </html>

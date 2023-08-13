@@ -3,7 +3,56 @@ body {
     background-color: rgb(16, 19, 45);
     color: rgb(188, 199, 215);
     overflow-x: hidden;
+    transition: 0.1s ease-in-out;
 }
+
+body.light {
+    background-color: #f6fcff;
+    color: rgb(76, 79, 133)
+}
+
+body.light .text-gray {
+    color: rgb(76, 79, 133) !important;
+}
+
+body.light .highlight-text {
+    color: #38b6ff !important;
+}
+
+body.light .text-dark {
+    color: rgb(135, 142, 184) !important;
+}
+
+body.light .bg-dark {
+    background-color: #daf1fe !important;
+    border: none;
+}
+
+body.light .text-light {
+    color: #38b6ff !important;
+}
+
+body.light .btn-contact {
+    color: #38b6ff
+}
+
+body.light .btn-contact:hover {
+    color: white
+}
+
+.hexagon path {
+    fill: rgb(76, 79, 133) !important;
+}
+
+body.light .hexagon path {
+    display: none;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
 
 .carousel-item:after {
     content: "";
@@ -16,6 +65,11 @@ body {
     background: #38b6ff55;
 }
 
+.experience-date {
+    font-family: monospace;
+    text-align: start !important;
+}
+
 .text-blue {
     color: #38b6ff;
 }
@@ -26,6 +80,10 @@ body {
 
 .bg-dark {
     background-color: rgb(36, 41, 78) !important;
+}
+
+.name-card-container {
+    width: auto;
 }
 
 hr {
@@ -126,6 +184,12 @@ svg.feather {
     fill: none;
 }
 
+@media (max-width: 576px) {
+    .mb-6 {
+        margin-bottom: 3.5rem !important;
+    }
+}
+
 @media (min-width: 576px) {
 
     .project-description-container {
@@ -157,4 +221,21 @@ svg.feather {
     .description-container {
         width: 600px;
     }
+
+    .name-card-container {
+        width: fit-content;
+    }
+
+    .experience-date {
+        text-align: end !important;
+    }
+
+    .description-right {
+        text-align: end;
+    }
+
+    .right-badge-justify {
+        justify-content: end;
+    }
+
 }
