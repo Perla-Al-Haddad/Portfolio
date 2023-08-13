@@ -4,6 +4,7 @@ body {
     color: rgb(188, 199, 215);
     overflow-x: hidden;
     transition: 0.1s ease-in-out;
+    font-size: 80%;
 }
 
 body.light {
@@ -191,6 +192,9 @@ svg.feather {
 }
 
 @media (min-width: 576px) {
+    body {
+        font-size: 100%;
+    }
 
     .project-description-container {
         grid-column: 1 / 8;
