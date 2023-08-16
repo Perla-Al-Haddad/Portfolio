@@ -185,6 +185,100 @@ svg.feather {
     fill: none;
 }
 
+.animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent !important;
+}
+
+.dropdown-menu {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    width: fit-content;
+    margin-right: var(--bs-navbar-nav-link-padding-x);
+    margin-left: var(--bs-navbar-nav-link-padding-x);
+    margin-bottom: 0.5rem;
+}
+
+a.underline-hover-effect {
+    text-decoration: none;
+}
+
+.underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    /* defines the space between text and underline */
+    position: relative;
+}
+
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;    
+    background-color: #38b6ff;
+    transition: width 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::before {
+    width: 100%;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+.dropdown-menu {
+    text-align: center !important;
+}
+
+
 @media (max-width: 576px) {
     .mb-6 {
         margin-bottom: 3.5rem !important;
@@ -194,6 +288,10 @@ svg.feather {
 @media (min-width: 576px) {
     body {
         font-size: 100%;
+    }
+
+    .dropdown-menu {
+        text-align: start !important;
     }
 
     .project-description-container {
